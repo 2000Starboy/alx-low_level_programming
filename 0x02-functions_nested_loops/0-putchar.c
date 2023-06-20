@@ -1,5 +1,18 @@
-#include <stdio.h>
-int _putchar(char c)
+#include "main.h"
+/**
+* main - entry point
+* return : always 0
+*/
+int main(void)
 {
-return (write(1, &c, 1));
+_putchar('_');
+_putchar('P');
+_putchar('U');
+_putchar('T');
+_putchar('C');
+_putchar('H');
+_putchar('A');
+_putchar('R');
+_putchar('\n');
+return (0);
 }
