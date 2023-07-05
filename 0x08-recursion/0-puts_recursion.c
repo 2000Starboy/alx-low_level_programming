@@ -1,20 +1,32 @@
-
 #include "main.h"
 
-
 /**
-  * _strlen_recursion - Calculate the length of a string
-  * @s: the string to count
-  *
-  * Return: integer value
-  */
-int _strlen_recursion(char *s)
-{
-	if (*s == '\0')
-	{
-		return (0);
-	}
 
-	s++;
-	return (_strlen_recursion(s) + 1);
+ * _puts_recursion - function like puts();
+
+ * @s: input
+
+ * Return: Always 0 (Success)
+
+ */
+
+void _puts_recursion(char *s)
+
+{
+
+        if (*s)
+
+        {
+
+                _putchar(*s);
+
+                _puts_recursion(s + 1);
+
+        }
+
+
+        else
+
+                _putchar('\n');
+
 }
